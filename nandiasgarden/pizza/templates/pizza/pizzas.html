@@ -3,6 +3,7 @@
 {% block 'body' %}
 <div class = "container">
 <h2> {{note}} </h2>
+  <h3> Another Heading </h3>
 <form action = "{% url 'pizzas' %}" method = 'post'>
 {% csrf_token %}
 {{ formset.management_form}}
